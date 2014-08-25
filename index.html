@@ -22,6 +22,7 @@
     html,body{background:#000;}
     body {padding-top:20px;padding-bottom:20px}
     .jumbotron-bottom hr, .donate-wrap hr{margin:0;}
+    .navbar-toggle .icon-bar{background-color:#000}
     .navbar-brand{background:transparent url('images/mayday-pac-logo.png') no-repeat 0 0;background-size:cover;width:272px;height:87px;position:absolute;z-index:100}
     .navbar-social{z-index:100;position:absolute;right:20px}
       .navbar-social .navbar-nav>li>a{padding-top:0px;padding-bottom:0px}
@@ -29,8 +30,9 @@
         .navbar-social a.social.facebook-share{background-image:url('images/share-facebook.png')}
         .navbar-social a.social.twitter-share{background-image:url('images/share-twitter.png')}
         .navbar-social a.social.email-share{background-image:url('images/share-email.png')}
-    .navbar-primary{padding-left:272px;position:absolute;z-index:100;top:26px;}
+    .navbar-primary{padding-left:272px;position:absolute;z-index:100;top:26px;width:100%;}
       .navbar-primary .navbar-nav>li>a{padding:15px 40px;text-transform:uppercase;color:#444;font-weight:700;}
+        .navbar-primary .in .navbar-nav>li{background-color:rgba(255,255,255,0.8);}
         .navbar-primary .navbar-nav>li>a small{vertical-align:top}
         .dropdown-menu{border:0;border-radius:0;margin:0;}
         .dropdown-menu>li>a{padding:10px 20px;}
@@ -41,7 +43,7 @@
     .jumbotron{padding-top:80px;margin-bottom:0;background:transparent url('images/hero-2014.08.25.jpg') no-repeat 0 0;background-size:cover;}
       .jumbotron h2{font-size:34px;text-shadow:0px 0px 6px rgba(255,255,255,0.4)}
       .jumbotron h4{font-size:20px;text-shadow:0px 0px 4px rgba(255,255,255,0.4)}
-      .jumbotron .form-control{background: rgba(0,0,0,0.1); color:#222; margin-right:15px;border: 0; border-radius: 0;float:left;}
+      .jumbotron .form-control{background: rgba(0,0,0,0.1); color:#222; margin-right:15px;border: 0; border-radius: 0;float:left;margin-bottom:10px;}
         .jumbotron .form-control[type="email"]{width:250px;}
         .jumbotron .form-control.zip{width:80px;}
         .jumbotron .form-control::-webkit-input-placeholder { color:#666;font-weight:700;text-shadow:0px 0px 2px rgba(255,255,255,0.5)}
@@ -79,10 +81,11 @@
       .jumbotron-bottom h2{margin: 16px 0 0;text-align: right;}
       .jumbotron-bottom p{margin: 12px 0 10px;}
     .latest-news .col-md-4>div{background:#fff;border:1px solid #ddd;}
-      .blog-image{width:100%;min-height:200px;margin:0;}
-      .article-details{padding:2px 15px 65px;border-top:1px solid #ddd;}
-        .article-details h5{font-size:0.8;color:#666;}
-        .article-details .btn-cta{background:transparent url('images/btn-blog-cta.png') 0 0 no-repeat;width:218px;height:47px;display:block;position:absolute;left:0px;bottom:20px;color:#fff;font-weight:700;font-size:16px;padding:13px 0 0;text-transform: uppercase;}
+      article{margin-bottom:15px;}
+        .blog-image{width:100%;min-height:200px;margin:0;background-size:cover}
+        .article-details{padding:2px 15px 65px;border-top:1px solid #ddd;}
+          .article-details h5{font-size:0.8;color:#666;}
+          .article-details .btn-cta{background:transparent url('images/btn-blog-cta.png') 0 0 no-repeat;width:218px;height:47px;display:block;position:absolute;left:0px;bottom:20px;color:#fff;font-weight:700;font-size:16px;padding:13px 0 0;text-transform: uppercase;}
     .news-intro{padding:10px 0;margin-top:15px;}
       .news-intro .col-md-4{text-align:center}
         .news-intro h3{margin-top:8px;}
@@ -115,8 +118,8 @@
     <div class="container" style="position:relative">
       <a class="navbar-brand ir" href="#">MAYDAY.US</a>
       <div class="row navbar-social"  style="">
-        <div class="navbar-header pull-right">
-          <div class="collapse navbar-collapse">
+        <div class="navbar-header pull-right  hidden-xs hidden-sm">
+          <div class="">
             <ul class="nav navbar-nav">
               <li><a href="#" class="ir social facebook-share">Facebook</a></li>
               <li><a href="#" class="ir social twitter-share">Twitter</a></li>
